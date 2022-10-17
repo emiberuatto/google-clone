@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: roboto;
+    
+}
+
+.header__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100vw;
+    background-color: transparent;
+    margin-left: -40px;
+}
+
+li{
+    margin: 20px;
+    list-style: none;
+}
+
+.header__a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 30px;
+}
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    grid-template-rows: repeat(2 , auto);
+    grid-template-columns: 1;
+}
+
+h1{
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    font-size: 100px;
+    
+}
+
+input{
+    width: 33rem;
+    height: 2.3rem;
+    border-radius: 40px;
+}
+
+.span1{
+    color: rgb(66 133 244);
+}
+.span2{
+    color: rgb(219 68 55);
+}
+.span3{
+    color: rgb(244 180 0);
+}
+.span4{
+    color: rgb(15 157 88);
+}
+
+.icono-placeholder{
+    background-image: url(./imagenes/search_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 20px;
+    margin-left: 20px;
+    text-indent: 60px;
+}
+
+::placeholder{
+    font-size: 16px;
+    text-align: start;
+    background-image: url(./imagenes/keyboard_voice_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 480px;
+}
+
+@media (max-width: 768px){
+    .header__a{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+
+    input{
+        width: 25rem;
+        height: 1.5rem;
+        border-radius: 40px;
+    }
+
+    .icono-placeholder{
+        background-image: url(./imagenes/search_FILL0_wght400_GRAD0_opsz48.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 20px;
+        margin-left: 20px;
+        text-indent: 60px;
+    }
+    
+    ::placeholder{
+        font-size: 13px;
+        text-align: start;
+        background-image: url(./imagenes/keyboard_voice_FILL0_wght400_GRAD0_opsz48.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 360px;
+    }
+}
